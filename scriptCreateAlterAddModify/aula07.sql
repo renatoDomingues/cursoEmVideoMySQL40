@@ -128,3 +128,94 @@ SELECT * FROM cursos;
 TRUNCATE TABLE cursos;
 
 SELECT * FROM cursos;
+
+USE cadastro;
+
+SELECT carga FROM cursos
+GROUP BY carga;
+
+SELECT carga, COUNT(nome) FROM cursos
+GROUP BY carga;
+
+SELECT * FROM cursos;
+
+SELECT totaulas FROM cursos;
+
+SELECT totaulas FROM cursos
+ORDER BY totaulas;
+
+SELECT DISTINCT totaulas FROM cursos
+ORDER BY totaulas;
+
+SELECT totaulas FROM cursos
+GROUP BY totaulas
+ORDER BY totaulas;
+
+SELECT totaulas, COUNT(*) FROM cursos
+GROUP BY totaulas
+ORDER BY totaulas;
+
+SELECT * FROM cursos WHERE totaulas=30;
+
+SELECT * FROM cursos WHERE totaulas=12;
+
+SELECT * FROM cursos WHERE totaulas>20;
+
+SELECT * FROM cursos WHERE totaulas=30;
+
+SELECT carga, totaulas FROM cursos WHERE totaulas=30
+GROUP BY carga;
+
+SELECT carga, COUNT(nome) FROM cursos WHERE totaulas=30
+GROUP BY carga;
+
+SELECT * FROM cursos;
+
+SELECT * FROM cursos
+GROUP BY ano;
+
+SELECT ano, COUNT(*) FROM cursos
+GROUP BY ano;
+
+SELECT ano, COUNT(*) FROM cursos
+GROUP BY ano
+ORDER BY COUNT(*);
+
+SELECT ano, COUNT(*) FROM cursos
+GROUP BY ano
+ORDER BY COUNT(*) DESC;
+
+SELECT ano, COUNT(*) FROM cursos
+GROUP BY ano
+HAVING COUNT(ano)>=5
+ORDER BY COUNT(*) DESC;
+
+SELECT ano, COUNT(*) FROM cursos
+GROUP BY ano
+HAVING ano>2013
+ORDER BY COUNT(*) DESC;
+
+SELECT ano, COUNT(*) FROM cursos
+WHERE totaulas>30
+GROUP BY ano
+HAVING ano>2013
+ORDER BY COUNT(*) DESC;
+
+SELECT AVG(carga) FROM cursos;
+
+SELECT * FROM cursos
+WHERE ano>2015;
+
+SELECT carga, COUNT(*) FROM cursos
+WHERE ano>2015
+GROUP BY carga;
+
+SELECT carga, COUNT(*) FROM cursos
+WHERE ano>2015
+GROUP BY carga
+HAVING carga>36.6;
+
+SELECT carga, COUNT(*) FROM cursos
+WHERE ano>2015
+GROUP BY carga
+HAVING carga>(SELECT AVG(carga) FROM cursos);
