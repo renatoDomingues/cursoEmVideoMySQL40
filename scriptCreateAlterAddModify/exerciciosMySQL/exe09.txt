@@ -1,0 +1,28 @@
+Tem 09 exercicios para resolvermo MySQLQ Workbench:
+
+"Uma lista com o nome de todos as gafanhotas";
+R=>
+
+"Uma lista com os dados de todos aqueles que nasceram entre 1/Jan/2000 e 31/Dez/2015";
+R=>
+
+"Uma lista com o nome de todos os homens que trabalham como Programadores";
+R=>
+
+"Uma lista com os dados de todos as mulheres que nasceram no Brasil e que têm seu nome inciado com a letra J";
+R=>
+
+"Uma lista com o nome e nascionalidade de todos os homens que têm SILVA no nome, não nasceram no Brasil e pesam menos de 100kg";
+R=>
+
+"Qual é a maior altura entre gafanhotos homens que moram no Brasil";
+R=>
+
+"Qual é a média de peso dos gafanhotos cadastrados?";
+R=>
+
+"Qual é o menor peso entre as gafanhotas mulheres que nasceram fora do Brasil e entre 01/Jan/1990 e 31/Dez/2000?";
+R=>
+
+"Quantas gafanhotas mulheres têm mais de 1.90m de altura?";
+R=>

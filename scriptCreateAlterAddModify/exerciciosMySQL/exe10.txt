@@ -1,0 +1,5 @@
+EXERCICIOS da Aula Cursos MySQL #13-SELECT(Parte 3):
+
+(1) "Uma lista com as profissões dos gafanhotos e  seus respectivos quantitativos?"
+
+(2) "Quantaos gafanhotos homens e quantas mulheres nasceram após 01/Jan/2005?"?
